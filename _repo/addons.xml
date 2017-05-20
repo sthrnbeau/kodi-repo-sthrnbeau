@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="repository.sthrnbeau" name="sthrnbeau repository" version="0.1.0" provider-name="sthrnbeau">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="sthrnbeau repository">
+            <info compressed="false">https://raw.github.com/sthrnbeau/kodi-repo-sthrnbeau/_repo/addons.xml</info>
+            <checksum>https://raw.github.com/sthrnbeau/kodi-repo-sthrnbeau/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/sthrnbeau/kodi-repo-sthrnbeau/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>adult addons and addon dev utilities</summary>
+            <description>enjoy</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.pyxbmct"
+   name="PyXBMCt"
+   version="1.2.0"
+   provider-name="Roman V.M.">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">PyXBMCt UI framework</summary>
+    <description lang="en">PyXBMCt is a mini-framework for simple XBMC addon UI buliding. It is similar to PyQt and provides parent windows, a number of UI controls (widgets) and a grid layout manager to place controls.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>GNU GPL v.3</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=174859</forum>
+    <website>http://romanvm.github.io/PyXBMCt</website>
+    <email>romanvm@yandex.ua</email>
+    <source>https://github.com/romanvm/script.module.pyxbmct</source>
+  </extension>
+</addon>
+
+<addon id="script.pyxbmct.demo"
+   name="PyXBMCt Demo"
+   version="1.1.2"
+   provider-name="Roman_V_M">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.pyxbmct" version="1.1.4" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">PyXBMCt Demo Addon</summary>
+    <description lang="en">Addon for demonstrating the capabilities and usage of PyXBMCt framework.</description>
+  </extension>
+</addon>
+</addons>
